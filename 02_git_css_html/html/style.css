@@ -182,6 +182,7 @@ header .section-title--main-title {
   align-content: center;
   justify-content: center;
   height: 100%;
+  background-color: #decdff;
 }
 .main {
   grid-area: main;
