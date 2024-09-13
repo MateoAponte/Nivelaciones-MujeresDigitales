@@ -1,0 +1,33 @@
+/* Selectores */
+#id {
+  color: red;
+}
+.class {
+  color: blue;
+}
+tag-element {
+  color: geen;
+}
+.element-link[href='#'] {
+  color: yered;
+}
+.element + .element-sibling {
+  color: yellowgreen;
+}
+
+/* Selección hijo */
+.element:first-child {
+  color: gray;
+}
+.element:last-child {
+  color: violet;
+}
+.element:nth-child(2) {
+  color: pink;
+}
+.element:nth-child(even) {
+  color: crimson;
+}
+.element:nth-child(odd) {
+  color: aquamarine;
+}

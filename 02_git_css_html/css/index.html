@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!-- Etiqueta HTML: Define el tipo de documento y su características -->
+<html lang="en">
+  <!-- Etiqueta HEAD: Contiene información general sobre el documento, incluyendo los metadatos -->
+  <head>
+    <!-- Etiqueta META: Metadata que describe encriptación y tipo de contenido -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Etiqueta LINK: Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="./style/page/reset.css" />
+    <link rel="stylesheet" href="./style/page/style.css" />
+    <link rel="stylesheet" href="./style/guide/flex.css" />
+    <link rel="stylesheet" href="./style/guide/grid.css" />
+    <link rel="stylesheet" href="./style/guide/box-model.css" />
+
+    <!-- Etiqueta LINK: Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title: Título del documento -->
+    <title>HTML Prueba</title>
+  </head>
+  <!-- Etiqueta BODY: Contenido del documento  -->
+  <body>
+    <!-- Etiqueta HEADER: Contenedor para el contenido de la cabecera -->
+    <header>
+      <h1 class="section-title--main-title">Resumen propiedades CSS</h1>
+    </header>
+
+    <!-- Etiqueta HEADER: Contenedor para el contenido de la cabecera -->
+    <section class="section-container">
+      <section class="section-element">
+        <h2 class="section-title">Selectores</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>ID: </strong>
+          <p>
+            <span id="element-id">#element-id</span>
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>Class: </strong>
+          <p>
+            <span class="element-class">.element-class</span>
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>Elemento: </strong>
+          <p>
+            <em>tag-elemento</em>
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>Atributo: </strong>
+          <p>
+            <span class="element-link">.element-link[href="#"]</span>
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>Hermano: </strong>
+          <p>
+            <span class="element-sibling">+ .element-sibling</span>
+          </p>
+        </div>
+        <span class="section-property section-property--first-child">
+          <strong>Primer hijo: </strong>
+          <p>
+            <span class="element-child">.element-child:first-child</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child</span>
+          </p>
+        </span>
+        <span class="section-property section-property--last-child">
+          <strong>Ultimo hijo: </strong>
+          <p>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child:last-child</span>
+          </p>
+        </span>
+        <span class="section-property section-property--selection">
+          <strong>Selección hijo: </strong>
+          <p>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child:nth-child(2)</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child</span>
+          </p>
+        </span>
+        <span class="section-property section-property--even">
+          <strong>Selección pares: </strong>
+          <p>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child:nth-child(even)</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child:nth-child(even)</span>
+          </p>
+        </span>
+        <span class="section-property section-property--odd">
+          <strong>Selección impares: </strong>
+          <p>
+            <span class="element-child">.element-child:nth-child(odd)</span>
+            <span class="element-child">.element-child</span>
+            <span class="element-child">.element-child:nth-child(odd)</span>
+            <span class="element-child">.element-child</span>
+          </p>
+        </span>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Display</h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--inline">
+          <strong>
+            Inline
+          </strong>
+          <p>
+            <span>Contenido en linea</span>
+            <span>Contenido en linea</span>
+            <span>Contenido en linea</span>
+          </p>
+        </div>
+        <div class="section-property section-property--block">
+          <strong>
+            Block
+          </strong>
+          <p>
+            <span>Contenido en bloque</span>
+            <span>Contenido en bloque</span>
+            <span>Contenido en bloque</span>
+          </p>
+        </div>
+        <div class="section-property section-property--inline-block">
+          <strong>
+            Inline-block
+          </strong>
+          <p>
+            <span>Contenido en línea y bloque</span>
+            <span>Contenido en línea y bloque</span>
+            <span>Contenido en línea y bloque</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Properties in Text</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <div>
+            <strong>text-color: </strong>
+          </div>
+          <div>
+            <p>
+              <span style="color: rgba(172, 59, 97, 0.822)">RGBA, </span>
+              <span style="color: #5c4bbb">Hexadecimal, </span>
+              <span style="color: hsl(128, 37%, 48%)">HSL, </span>
+              <span style="color: hwb(24 18% 3%)">HWB </span>
+            </p>
+          </div>
+        </div>
+        <div class="section-property">
+          <strong>text-align: </strong>
+          <p class="section-property--border" style="width: 100%">
+            <span style="text-align: left; display: block; width: 100%"
+              >Left</span
+            >
+            <span style="text-align: right; display: block; width: 100%"
+              >Right</span
+            >
+            <span style="text-align: center; display: block; width: 100%"
+              >Center</span
+            >
+            <span style="text-align: Justify; display: block; width: 100%"
+              >Justify</span
+            >
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>text-decoration: </strong>
+          <p>
+            <span style="text-decoration: none">None</span>,
+            <span style="text-decoration: underline">Underline</span>,
+            <span style="text-decoration: overline">Overline</span>,
+            <span style="text-decoration: line-through">Line-through</span>,
+            <span style="text-decoration: blink">Blink</span>
+          </p>
+        </div>
+        <div class="section-property">
+          <strong>text-transform: </strong>
+          <p>
+            <span style="text-transform: none">None</span>,
+            <span style="text-transform: uppercase">Uppercase</span>,
+            <span style="text-transform: lowercase">Lowercase</span>,
+            <span style="text-transform: capitalize">Capitalize</span>
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>text-shadow: </strong>
+          <p>
+            <span style="text-shadow: none">None</span>
+            <span style="text-shadow: 1px 1px 1px #000">1px 1px 1px</span>,
+            <span style="text-shadow: 2px 2px 2px #000">2px 2px 2px</span>,
+            <span style="text-shadow: 3px 3px 3px #000">3px 3px 3px</span>,
+            <span style="text-shadow: 4px 4px 4px #000">4px 4px 4px</span>,
+            <span style="text-shadow: 5px 5px 5px #000">5px 5px 5px</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Properties in Font</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>font-family: </strong>
+          <p>
+            <span style="font-family: Arial">Arial </span>,
+            <span style="font-family: Arial Black">Arial Black </span>,
+            <span style="font-family: Arial Narrow">Arial Narrow </span>,
+            <span style="font-family: Arial Rounded MT Bold"
+              >Arial Rounded MT Bold</span
+            >
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>font-size: </strong>
+          <p>
+            <span style="font-size: 10px">10px </span>,
+            <span style="font-size: 12px">12px </span>,
+            <span style="font-size: 14px">14px </span>,
+            <span style="font-size: 16px">16px </span>,
+            <span style="font-size: 18px">18px </span>,
+            <span style="font-size: 20px">20px </span>
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>font-weight: </strong>
+          <p>
+            <span style="font-weight: normal">Normal </span>,
+            <span style="font-weight: bold">Bold </span>,
+            <span style="font-weight: bolder">Bolder </span>,
+            <span style="font-weight: lighter">Lighter </span>,
+            <span style="font-weight: 100">100 </span>,
+            <span style="font-weight: 200">200 </span>,
+            <span style="font-weight: 300">300 </span>,
+            <span style="font-weight: 400">400 </span>
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>font-style: </strong>
+          <p>
+            <span style="font-style: normal">Normal </span>,
+            <span style="font-style: italic">Italic </span>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Properties in Background</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>Background-color: </strong>
+          <p>
+            <span style="background-color: rgba(172, 59, 97, 0.822); color: #fff"
+              >RGBA,
+            </span>
+            <span style="background-color: #5c4bbb; color: #fff"
+              >Hexadecimal,
+            </span>
+            <span style="background-color: hsl(128, 37%, 48%); color: #fff"
+              >HSL,
+            </span>
+            <span style="background-color: hwb(24 18% 3%); color: #fff"
+              >HWB
+            </span>
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>Background-image: </strong>
+          <p>
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                color: #fff;
+              "
+              >Imagen</span
+            >
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>Background-position: </strong>
+          <p>
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: left;
+                color: #fff;
+              "
+              >Left</span
+            >
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: right;
+                color: #fff;
+              "
+              >Right</span
+            >
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: center;
+                color: #fff;
+              "
+              >Center</span
+            >
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: top;
+                color: #fff;
+              "
+              >Top</span
+            >
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: bottom;
+                color: #fff;
+              "
+              >Bottom</span
+            >
+            <span
+              class="background"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-position: 10px;
+                color: #fff;
+              "
+              >10px</span
+            >
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>Background-repeat: </strong>
+          <p>
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-repeat: repeat;
+                color: #fff;
+              "
+              >Repeat</span
+            >
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-repeat: repeat-x;
+                color: #fff;
+              "
+              >Repeat-x</span
+            >
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-repeat: repeat-y;
+                color: #fff;
+              "
+              >Repeat-y</span
+            >
+          </p>
+        </div>
+
+        <div class="section-property">
+          <strong>Background-size: </strong>
+          <p>
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-size: cover;
+                color: #fff;
+              "
+              >Cover</span
+            >
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-size: contain;
+                color: #fff;
+              "
+              >Contain</span
+            >
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-size: 50px;
+                color: #fff;
+              "
+              >Contain</span
+            >
+            <span
+              class="background background--sized"
+              style="
+                background-image: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+                background-size: 90px 90px;
+                color: #fff;
+              "
+              >Contain</span
+            >
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <h2 class="section-title">Box-Model</h2>
+    <section class="section-container">
+      <section class="section-element">
+        <h2 class="section-title">Box-model</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <p>
+            <div
+              class="section--model"
+              >
+              Margin
+                <div class="section--border">
+                  Border
+                  <div class="section--padding">
+                    Padding
+                    <div class="section--content">
+                      Some Content
+                    </div>
+                  </div>
+                </div>
+              </div
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Margin</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>Margin: </strong>
+            <div class="section-property--margin">
+              <div class="section--square">
+                1
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Padding</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>Padding: </strong>
+            <div class="section-property--padding">
+              <div class="section--square">
+                1
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Border</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>Border: </strong>
+            <div class="section-property--bordered">
+              <div class="section--square">
+                1
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-element">
+        <h2 class="section-title">Mix</h2>
+        <hr class="section-divider" />
+        <div class="section-property">
+          <strong>Border: </strong>
+            <div class="section-property--mix">
+              <div class="section--square">
+                1
+              </div>
+            </div>
+        </div>
+      </section>
+    </section>
+
+    <h2 class="section-title">Flex-Direction</h2>
+    <section class="section-container">
+      <section class="section-element">
+        <h2 class="section-title"> Column </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-column">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-element">
+        <h2 class="section-title"> Column-Reverse </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-column-reverse">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element">
+        <h2 class="section-title"> Row </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-row">
+          <div style="height: 100px;" class="section--square">
+            1
+          </div>
+          <div style="height: 100px;" class="section--square">
+            2
+          </div>
+          <div style="height: 100px;" class="section--square">
+            3
+          </div>
+          <div style="height: 100px;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element">
+        <h2 class="section-title"> Row-Reverse </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-row-reverse">
+          <div style="height: 100px;" class="section--square">
+            1
+          </div>
+          <div style="height: 100px;" class="section--square">
+            2
+          </div>
+          <div style="height: 100px;" class="section--square">
+            3
+          </div>
+          <div style="height: 100px;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <h2 class="section-title">Align</h2>
+    <section class="section-container">
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Center </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-align-center">
+          <div class="section--square">
+            1
+          </div>
+          <div style="height: 150px;" class="section--square">
+            2
+          </div>
+          <div style="height: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Flex-Start </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-align-start">
+          <div class="section--square">
+            1
+          </div>
+          <div style="height: 150px;" class="section--square">
+            2
+          </div>
+          <div style="height: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Flex-End </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-align-end">
+          <div class="section--square">
+            1
+          </div>
+          <div style="height: 150px;" class="section--square">
+            2
+          </div>
+          <div style="height: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Baseline </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-align-baseline">
+          <div class="section--square">
+            1
+          </div>
+          <div style="font-size: 6rem; height: 150px;" class="section--square">
+            2
+          </div>
+          <div style="font-size: 4rem; height: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-element">
+        <h2 class="section-title"> Align-items: Stretch </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-align-stretch">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <h2 class="section-title">Justify</h2>
+    <section class="section-container">
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> justify-content: Center </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-center">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> justify-content: Flex-Start </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-start">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Flex-End </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-end">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Space-Between </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-between">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Space-Evenly </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-evenly">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Space-Around </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-around">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 100px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-items: Stretch </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-justify-stretch">
+          <div  class="section--square">
+            1
+          </div>
+          <div  class="section--square">
+            2
+          </div>
+          <div  class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <h2 class="section-title">Wrap</h2>
+    <section class="section-container">
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> flex-wrap: No-Wrap </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-no-wrap">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 200px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+          <div style="width: 100px;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> flex-wrap: Wrap </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-wrap">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 200px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+          <div style="width: 100px;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> flex-wrap: Wrap-Reverse </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-wrap-reverse">
+          <div style="width: 100px;" class="section--square">
+            1
+          </div>
+          <div style="width: 200px;" class="section--square">
+            2
+          </div>
+          <div style="width: 100px;" class="section--square">
+            3
+          </div>
+          <div style="width: 100px;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <h2 class="section-title">Aplicables a los hijos</h2>
+    <section class="section-container">
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Order: </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-no-wrap">
+          <div style="order: 4;" class="section--square">
+            1
+          </div>
+          <div style="order: 3;" class="section--square">
+            2
+          </div>
+          <div style="order: 2;" class="section--square">
+            3
+          </div>
+          <div style="order: 4;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Flex-Grow: </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-grow">
+          <div class="section--square">
+            1
+          </div>
+          <div style="flex-grow: 2;" class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div style="flex-grow: 4;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Flex-Shrink: </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-shrink">
+          <div style="flex-shrink: 3;" class="section--square">
+            1
+          </div>
+          <div style="flex-shrink: 1;" class="section--square">
+            2
+          </div>
+          <div style="flex-shrink: 1;" class="section--square">
+            3
+          </div>
+          <div style="flex-shrink: 3;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Flex-Basis: </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-basis">
+          <div style="flex-basis: 500px; flex-shrink: 3;" class="section--square">
+            1
+          </div>
+          <div style="flex-basis: 100px;" class="section--square">
+            2
+          </div>
+          <div style="flex-basis: 100px;" class="section--square">
+            3
+          </div>
+          <div style="flex-basis: 200px; flex-shrink: 2;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+      <section class="section-element section-element--flex">
+        <h2 class="section-title"> Align-Self: </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--flex section-property--flex-basis">
+          <div style="align-self: flex-start;" class="section--square">
+            1
+          </div>
+          <div style="align-self: center;" class="section--square">
+            2
+          </div>
+          <div style="align-self: flex-end;" class="section--square">
+            3
+          </div>
+          <div style="align-self: stretch;" class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <h2 class="section-title">Grid - Grillas</h2>
+    <section class="section-container">
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Columns and Rows </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+          <div class="section--square">
+            5
+          </div>
+          <div class="section--square">
+            6
+          </div>
+          <div class="section--square">
+            7
+          </div>
+          <div class="section--square">
+            8
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Espacios personalizados </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid section-property--grid-modify">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+          <div class="section--square">
+            5
+          </div>
+          <div class="section--square">
+            6
+          </div>
+          <div class="section--square">
+            7
+          </div>
+          <div class="section--square">
+            8
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Auto Size </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid-auto">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+          <div class="section--square">
+            5
+          </div>
+          <div class="section--square">
+            6
+          </div>
+          <div class="section--square">
+            7
+          </div>
+          <div class="section--square">
+            8
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Areás </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid-areas">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Areás Compleja </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid-complex">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+          <div class="section--square">
+            5
+          </div>
+          <div class="section--square">
+            6
+          </div>
+        </div>
+      </section>
+
+      <section class="section-element section-element--grid">
+        <h2 class="section-title"> Líneas </h2>
+        <hr class="section-divider" />
+        <div class="section-property section-property--grid-lines">
+          <div class="section--square">
+            1
+          </div>
+          <div class="section--square">
+            2
+          </div>
+          <div class="section--square">
+            3
+          </div>
+          <div class="section--square">
+            4
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </body>
+</html>

@@ -6,7 +6,7 @@
   font-family: Nunito, sans-serif;
 }
 body {
-  background-color: #f5f2f0;
+  background-color: #fcf6ef;
   padding: 2rem 6rem;
 }
 a {
@@ -69,7 +69,7 @@ li {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: #eee2dc;
+  background-color: #ffffff;
   padding: 1rem;
   width: 25vw;
 }
@@ -80,7 +80,7 @@ li {
 .section-divider {
   margin: 1rem 0;
   border: none;
-  border-top: 1px solid #123c69;
+  border-top: 2px solid #123c69;
   width: 100%;
   height: 1px;
 }
@@ -152,14 +152,14 @@ header .section-title--main-title {
   padding: 1rem;
   width: 100%;
   border-radius: 4px;
-  background-color: #f5f2f0;
+  background-color: #fdf7f3;
 }
 .container-body {
   border: 1px solid #505050;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 100%;
   border-radius: 4px;
-  background-color: #d0e6fa;
+  background-color: #f0f1cd;
   display: grid;
   grid-template-areas:
     'header header header header'
@@ -182,7 +182,7 @@ header .section-title--main-title {
   align-content: center;
   justify-content: center;
   height: 100%;
-  background-color: #decdff;
+  background-color: #dbdefd;
 }
 .main {
   grid-area: main;

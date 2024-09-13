@@ -1,0 +1,24 @@
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+body {
+  background-color: #fcf6ef;
+  padding: 2rem 6rem;
+}
+
+header .section-title--main-title {
+  color: #ac3b61;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+strong {
+  color: #3b3b3b;
+}
+p {
+  margin-left: 0.5rem;
+}

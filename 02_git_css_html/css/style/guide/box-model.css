@@ -1,0 +1,71 @@
+.section-property--margin {
+  border: 1px solid #505050;
+  box-sizing: content-box;
+  background-color: #feffef;
+}
+.section-property--margin .section--square {
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 0;
+  display: block;
+}
+
+.section-property--padding {
+  box-sizing: content-box;
+}
+.section-property--padding .section--square {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px;
+}
+
+.section-property--bordered {
+  border: 2px solid #ff0000;
+}
+.section-property--bordered .section--square {
+  box-sizing: border-box;
+  border: 5px solid #a79582;
+  display: block;
+  padding: 0;
+}
+
+.section-property--mix {
+  border: 2px solid #ff0000;
+  background-color: #e6e6e6;
+}
+.section-property--mix .section--square {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+}
+
+.section--model {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #feffef;
+  border: 1px solid #505050;
+  width: 100%;
+  min-height: 100%;
+}
+.section--border {
+  background-color: #e0c3a5;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+.section--padding {
+  background-color: #fcf5b6;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100%;
+}
+.section--content {
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 4px;
+  width: 100%;
+  min-height: 100%;
+}

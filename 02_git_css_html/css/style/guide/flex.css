@@ -1,0 +1,104 @@
+.section-property--flex {
+  display: flex;
+  gap: 10px;
+  height: 74%;
+}
+.section-property--flex-column {
+  flex-direction: column;
+}
+.section-property--flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.section-property--flex-row {
+  flex-direction: row;
+}
+.section-property--flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.section-property--flex-align-center {
+  align-items: center;
+}
+.section-property--flex-align-start {
+  align-items: flex-start;
+}
+.section-property--flex-align-end {
+  align-items: flex-end;
+}
+.section-property--flex-align-baseline {
+  align-items: baseline;
+}
+.section-property--flex-align-stretch {
+  align-items: stretch;
+}
+
+.section-property--flex-justify-center {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+.section-property--flex-justify-start {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.section-property--flex-justify-end {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.section-property--flex-justify-between {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.section-property--flex-justify-evenly {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.section-property--flex-justify-around {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.section-property--flex-justify-stretch {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.section-property--flex-wrap {
+  flex-wrap: wrap;
+}
+.section-property--flex-wrap div {
+  height: 150px;
+}
+
+.section-property--flex-no-wrap {
+  flex-wrap: nowrap;
+}
+.section-property--flex-no-wrap div {
+  height: 150px;
+}
+.section-property--flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+  align-content: flex-end;
+}
+.section-property--flex-wrap-reverse div {
+  height: 150px;
+}
+
+.section-property--flex-grow {
+  flex-direction: row;
+}
+.section-property--flex-grow .section--square {
+  width: unset;
+}
+
+.section-property--flex-shrink {
+  flex-direction: row;
+}
+.section-property--flex-shrink .section--square {
+  width: 150px;
+}
